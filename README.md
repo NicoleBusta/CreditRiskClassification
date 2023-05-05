@@ -5,7 +5,7 @@ Supervised learning and classification methods were used to train and evaluate t
 <!-- <center><img src="Images/credit_arroworange.jpg"/></center> -->
 <!-- <img src="Images/credit-risk-assessment.png"/> -->
 <div style="text-align: center;">
-<img src="Images/Credit-Risk-Management.jpg"/>
+<img src="Images/Picture1.jpg"/>
 </div>
 <!-- <center> <img height = 200 src="Images/robot.jpg"/></center> -->
 
