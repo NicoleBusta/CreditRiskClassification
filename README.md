@@ -4,14 +4,16 @@ Supervised learning and classification methods were used to train and evaluate t
 
 <!-- <center><img src="Images/credit_arroworange.jpg"/></center> -->
 <!-- <img src="Images/credit-risk-assessment.png"/> -->
-<center><img src="Images/Credit-Risk-Management.jpg"/></center>
+<center>
+<img src="Images/Credit-Risk-Management.jpg"/>
+</center>
 <!-- <center> <img height = 200 src="Images/robot.jpg"/></center> -->
 
 
 ## <u> Credit Risk Analysis Report </u>
 
 ### <b> Purpose </b>
-The purpose of the analysis is to predict the creditworthiness of borrowers by using historical financial data from a peer lending organization.
+The purpose of the analysis is to predict the creditworthiness of borrowers by using historical financial data from a peer lending organization. The following report will detail the data used, the methodology, and the results of the analysis.
 
 ### <b> Dataset </b>
 The following financial information was used in the analysis:
@@ -26,12 +28,13 @@ The following financial information was used in the analysis:
 <br>
 
 ### <b> Methodology </b>
+Jupyter Notebook and Python was used to read the CSV data into a Pandas DataFrame. The "Loan Status" was selected as the variable for the analysis, with 0 indicating a healthy loan and 1 indicating a high-risk loan. The following two models were used for the analysis:
+
 Logistic Regression Model with Original Data
-<li> Data provided in CSV and read into a Pandas DataFrame </li>
-<li> "Loan Status" selected as the analysis variable: <i> 0 - Healthy, 1 - High Risk </i></li>
 <li> Data split into training and testing sets via 'train_test_split' </li>
 <li> Logistic Regression Model created with the original data - accuracy score 99% </li>
 <li> Predictions made and saved to Pandas DataFrame - balanced accuracy score 95%</li>
+<br>
 
 Logistic Regression Model with Resampled Data
 <li> Training Data used to resample via 'RandomOverSampler' </li>
@@ -74,8 +77,8 @@ Based on the scores of the Logistic Regression Model using origina data, the mod
 
 Based on the scores of the Logistic Regression Model using resampled data, the model's performance seems to be impacted by noise and bias, and perhaps model selection issues. The resampled data may have created oversampling, making it harder for the model to distinguish between the two classes; healthy and high-risk. Also, oversampling of the high-risk class may cause the model to be biased towards that class, thereby leading to decreased overall accuracy.
 
-In reviewing the scores for the two models, I would lean towards using the Logistic Regression Model using Original Data. 
+For purposes of this analysis, and based on the data used and the scores received for the two models, the difference is nominal; both models appear relatively equal in performance and both result in an overall accuracy score of 95%. If the data were to change, or a different variable selected; the results may differ and alternate models (e.g., SVMs or Random Forests).
 
 ## Resources
 #### Data Source: lending_data.csv
-#### Software/Tools: Jupyter, Pandas, Numpy, Sklearn, Imblearn, VSCode
+#### Software/Tools: Jupyter, Python, Pandas, Numpy, Sklearn, Imblearn, VSCode
